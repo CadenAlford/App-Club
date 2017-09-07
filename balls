@@ -1,0 +1,28 @@
+1 <!DOCTYPE html>
+ 2 <html>
+ 3 <head>
+ 4     <title>This is the title of my website!</title>
+ 5     <style>
+ 6     li {
+ 7         color: red;
+ 8     }
+ 9     .this-is-a-class-selector {
+10         color: blue;
+11     }
+12     #this-is-an-id-selector {
+13         color: green;
+14     }
+15     </style>
+16 </head>
+17 <body>
+18 Why do I have so much to do...
+19 <ul>
+20     <li class="this-is-a-class-selector">Write an article</li>
+21     <li id="this-is-an-id-selector">Write another article</li>
+22     <li>Write 2 more articles</li>
+23     <li>Read a few articles</li>
+24     <li>Write 3 more articles</li>
+25 </ul>
+26 The work never ends. :(
+27 </body>
+28 </html>
