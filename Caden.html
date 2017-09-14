@@ -33,14 +33,15 @@ document.addEventListener( 'keydown', function(event) {
  
 function ball() {
     ctx.clearRect(0,0, c.width, c.height) 
-x = x + vx;
-y = y + vy;
-if (x > c.width || x < 0) {
-    vx = -vx
-}
-if (y > c.height || y < 0) {
-    vy = -vy 
-}
+    //x = x + vx;
+    //y = y + vy;
+    //if (x > c.width || x < 0) {
+       //vx = -vx
+    //}
+    //if (y > c.height || y < 0) {
+     //  vy = -vy
+    //}
+
 ctx.beginPath();
 ctx.arc(x,y,40,0,2*Math.PI);
 ctx.stroke();
