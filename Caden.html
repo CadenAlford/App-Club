@@ -18,10 +18,17 @@ var vy = 10
 document.addEventListener( 'keydown', function(event) {
     console.log(event)
     if (event.key == "ArrowLeft") {
-        vy = -vx
-    } else if (event.key == "ArrowUp") {
-        vy = -vy
+        x = x-10
+    } 
+     if (event.key == "ArrowRight") {
+         x = x+10
+     }
+     if (event.key == "ArrowUp") {
+        y = y+10 
     }
+     if (event.key == "ArrowDown") {
+         y = y-10
+     }
 })
  
 function ball() {
