@@ -14,6 +14,13 @@ var x = 0
 var y = 0 
 var vx = 10 
 var vy = 10 
+
+document.addEventListener( 'keydown', function(event) {
+    console.log(event)
+    if (event.key == "ArrowLeft") {
+        vy = -vx
+    } else if (event.key == "ArrowUp")
+})
  
 function ball() {
     ctx.clearRect(0,0, c.width, c.height) 
