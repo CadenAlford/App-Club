@@ -19,7 +19,9 @@ document.addEventListener( 'keydown', function(event) {
     console.log(event)
     if (event.key == "ArrowLeft") {
         vy = -vx
-    } else if (event.key == "ArrowUp")
+    } else if (event.key == "ArrowUp") {
+        vy = -vy
+    }
 })
  
 function ball() {
