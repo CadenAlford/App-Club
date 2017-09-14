@@ -12,16 +12,18 @@ var ctx = c.getContext("2d");
 
 var x = 0
 var y = 0 
+var vx = 10 
+var vy = 10 
  
 function ball() {
     ctx.clearRect(0,0, c.width, c.height) 
-x = x + 10;
-y = y + 10;
-if (x > c.width) {
-    x = -x
+x = x + vx;
+y = y + vy;
+if (x > c.width || x < 0) {
+    vx = -vx
 }
-if (y > c.height) {
-    y = -y 
+if (y > c.height || y < 0) {
+    vy = -vy 
 }
 ctx.beginPath();
 ctx.arc(x,y,40,0,2*Math.PI);
