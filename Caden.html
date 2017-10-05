@@ -63,10 +63,10 @@ function ball() {
         x = x + 10 
     }
     if (keyPressed.down) {
-        y = y - 10
+        y = y + 10
     }
     if (keyPressed.up) {
-        y = y + 10}
+        y = y - 10}
 ctx.beginPath();
 ctx.arc(x,y,40,0,2*Math.PI);
 ctx.stroke();
