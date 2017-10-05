@@ -5,11 +5,7 @@
 <style></style>
 </head>
 <body>
-<canvas id="myCanvas" width="1000" height= "750" 
-var c=document.getElementById("myCanvas");
-var ctx=c.getContext("2d");
-ctx.rect(20,20,150,100);
-ctx.stroke();> 
+<canvas id="myCanvas" width="1000" height= "750"> </canvas> 
 
 <script>
 var c = document.getElementById("myCanvas");
@@ -74,7 +70,12 @@ function ball() {
         y = y - 10}
 ctx.beginPath();
 ctx.arc(x,y,40,0,2*Math.PI);
+ctx.stroke(); 
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+ctx.rect(20,20,150,100);
 ctx.stroke();
+
 requestAnimationFrame(ball);
 }
 
