@@ -13,8 +13,6 @@ var ctx = c.getContext("2d");
 
 var x = 0
 var y = 0 
-var vx = 10 
-var vy = 10
 
 var keyPressed = {
     left: false, 
@@ -70,10 +68,9 @@ function ball() {
         y = y - 10}
 ctx.beginPath();
 ctx.arc(x,y,40,0,2*Math.PI);
-var ctx=document.getElementById("myCanvas");
-var ctx=c.getContext("2d");
-ctx.rect(20,20,150,100);
 ctx.stroke(); 
+ctx.rect(20,20,150,100);
+ctx.stroke();
 
 requestAnimationFrame(ball);
 }
