@@ -73,13 +73,13 @@ ctx.arc(x,y,40,0,2*Math.PI);
 ctx.stroke(); 
 
 requestAnimationFrame(ball);
+var c=document.getElementById("myCanvas");
+var ctx=c.getctx("2d");
+ctx.rect(20,20,150,100);
+ctx.stroke();
 }
 
 ball()
-var c=document.getElementById("myCanvas");
-var ctx=c.getContext("2d");
-ctx.rect(20,20,150,100);
-ctx.stroke();
 </script>
 </body>
 </html>
