@@ -22,18 +22,39 @@ var keyPressed = {
     down: false, 
 } 
 
-document.addEventListener( 'keydown', function(event) {
+document.addEventListener('keydown', function(event) {
     console.log(event)
     if (event.key == "ArrowLeft") {
-        x = x-10
+        keyPressed.left = true
     } 
-     if (event.key == "ArrowRight") {
+     if (event.key == "ArrowRight") { 
+         keyPressed.right = true 
          x = x+10
      }
      if (event.key == "ArrowUp") {
+         keyPressed.up = true
         y = y-10 
     }
      if (event.key == "ArrowDown") {
+         keyPressed.down = true 
+         y = y+10
+     }
+})
+document.addEventListener('keyup', function(event) {
+    console.log(event)
+    if (event.key == "ArrowLeft") {
+        keyPressed.left = false
+    } 
+     if (event.key == "ArrowRight") { 
+         keyPressed.right = false
+         x = x+10
+     }
+     if (event.key == "ArrowUp") {
+         keyPressed.up = false
+        y = y-10 
+    }
+     if (event.key == "ArrowDown") {
+         keyPressed.down = false 
          y = y+10
      }
 })
