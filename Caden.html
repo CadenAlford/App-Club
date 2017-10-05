@@ -71,15 +71,15 @@ function ball() {
 ctx.beginPath();
 ctx.arc(x,y,40,0,2*Math.PI);
 ctx.stroke(); 
-var c=document.getElementById("myCanvas");
-var ctx=c.getContext("2d");
-ctx.rect(20,20,150,100);
-ctx.stroke();
 
 requestAnimationFrame(ball);
 }
 
 ball()
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+ctx.rect(20,20,150,100);
+ctx.stroke();
 </script>
 </body>
 </html>
