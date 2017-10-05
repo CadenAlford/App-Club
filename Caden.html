@@ -28,16 +28,13 @@ document.addEventListener('keydown', function(event) {
         keyPressed.left = true
     } 
      if (event.key == "ArrowRight") { 
-         keyPressed.right = true 
-         x = x+10
+         keyPres.right = true 
      }
      if (event.key == "ArrowUp") {
          keyPressed.up = true
-        y = y-10 
     }
      if (event.key == "ArrowDown") {
-         keyPressed.down = true 
-         y = y+10
+         keyPressed.down = true
      }
 })
 document.addEventListener('keyup', function(event) {
@@ -47,20 +44,29 @@ document.addEventListener('keyup', function(event) {
     } 
      if (event.key == "ArrowRight") { 
          keyPressed.right = false
-         x = x+10
+        
      }
      if (event.key == "ArrowUp") {
          keyPressed.up = false
-        y = y-10 
     }
      if (event.key == "ArrowDown") {
          keyPressed.down = false 
-         y = y+10
      }
 })
  
 function ball() {
     ctx.clearRect(0,0, c.width, c.height) 
+    if (keyPressed.left) {
+        x = x - 10
+    }
+    if (keyPressed.right) {
+        x = x - 10 
+    }
+    if (keyPressed.down) {
+        y = y - 10
+    }
+    if (keyPressed.up) {
+        y = y + 10}
     //x = x + vx;
     //y = y + vy;
     //if (x > c.width || x < 0) {
