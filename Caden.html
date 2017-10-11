@@ -56,16 +56,16 @@ document.addEventListener('keyup', function(event) {
 function ball() {
     ctx.clearRect(0,0, c.width, c.height) 
     if (keyPressed.left) {
-        x = x - 10
+        x = x - 5
     }
     if (keyPressed.right) {
-        x = x + 10 
+        x = x + 5
     }
     if (keyPressed.down) {
-        y = y + 10
+        y = y + 5
     }
     if (keyPressed.up) {
-        y = y - 10}
+        y = y - 5}
 ctx.beginPath();
 ctx.arc(x,y,40,0,2*Math.PI);
 ctx.stroke(); 
